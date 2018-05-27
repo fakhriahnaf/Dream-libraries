@@ -8,7 +8,7 @@ use InfyOm\Generator\Common\BaseRepository;
 /**
  * Class mahasiswaRepository
  * @package App\Repositories
- * @version March 18, 2018, 9:58 am UTC
+ * @version May 27, 2018, 3:13 am UTC
  *
  * @method mahasiswa findWithoutFail($id, $columns = ['*'])
  * @method mahasiswa find($id, $columns = ['*'])
@@ -20,9 +20,10 @@ class mahasiswaRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
+        'Nim',
         'Nama',
-        'NIM',
-        'Alamat'
+        'Departemen',
+        'No_handphone'
     ];
 
     /**

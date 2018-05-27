@@ -4,22 +4,28 @@
     <p>{!! $mahasiswa->id !!}</p>
 </div>
 
+<!-- Nim Field -->
+<div class="form-group">
+    {!! Form::label('Nim', 'Nim:') !!}
+    <p>{!! $mahasiswa->Nim !!}</p>
+</div>
+
 <!-- Nama Field -->
 <div class="form-group">
     {!! Form::label('Nama', 'Nama:') !!}
     <p>{!! $mahasiswa->Nama !!}</p>
 </div>
 
-<!-- Nim Field -->
+<!-- Departemen Field -->
 <div class="form-group">
-    {!! Form::label('NIM', 'Nim:') !!}
-    <p>{!! $mahasiswa->NIM !!}</p>
+    {!! Form::label('Departemen', 'Departemen:') !!}
+    <p>{!! $mahasiswa->Departemen !!}</p>
 </div>
 
-<!-- Alamat Field -->
+<!-- No Handphone Field -->
 <div class="form-group">
-    {!! Form::label('Alamat', 'Alamat:') !!}
-    <p>{!! $mahasiswa->Alamat !!}</p>
+    {!! Form::label('No_handphone', 'No Handphone:') !!}
+    <p>{!! $mahasiswa->No_handphone !!}</p>
 </div>
 
 <!-- Created At Field -->

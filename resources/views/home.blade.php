@@ -77,7 +77,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         <a href="bukus" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Daftar Buku</a>
                     </li>
                     <li class="">
-                        <a href="visitors" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Pengunjung</a>
+                        <a href="peminjams" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Peminjam Buku</a>
                     </li>
                     <li class="dropdown user user-menu">
                         <!-- Menu Toggle Button -->
@@ -164,7 +164,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       </div>
       
       <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-          <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+          <h1 class="w3-margin w3-xlarge">Quote of the day: live is life</h1>
       </div>
     
     

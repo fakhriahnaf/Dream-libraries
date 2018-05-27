@@ -1,25 +1,25 @@
-<!-- Judul Field -->
+<!-- Judul Buku Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Judul', 'Judul:') !!}
-    {!! Form::text('Judul', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Judul_Buku', 'Judul Buku:') !!}
+    {!! Form::text('Judul_Buku', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Pengarang Field -->
+<!-- Seri Buku Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Pengarang', 'Pengarang:') !!}
-    {!! Form::text('Pengarang', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Seri_buku', 'Seri Buku:') !!}
+    {!! Form::text('Seri_buku', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Seri Field -->
+<!-- Nama Pengarang Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('seri', 'Seri:') !!}
-    {!! Form::text('seri', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Nama_pengarang', 'Nama Pengarang:') !!}
+    {!! Form::text('Nama_pengarang', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Keterangan Field -->
+<!-- Tanggal Terbit Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('keterangan', 'Keterangan:') !!}
-    {!! Form::text('keterangan', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Tanggal_terbit', 'Tanggal Terbit:') !!}
+    {!! Form::date('Tanggal_terbit', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

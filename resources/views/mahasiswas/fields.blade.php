@@ -1,19 +1,25 @@
+<!-- Nim Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('Nim', 'Nim:') !!}
+    {!! Form::text('Nim', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Nama Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('Nama', 'Nama:') !!}
     {!! Form::text('Nama', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Nim Field -->
+<!-- Departemen Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('NIM', 'Nim:') !!}
-    {!! Form::text('NIM', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Departemen', 'Departemen:') !!}
+    {!! Form::text('Departemen', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Alamat Field -->
+<!-- No Handphone Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Alamat', 'Alamat:') !!}
-    {!! Form::text('Alamat', null, ['class' => 'form-control']) !!}
+    {!! Form::label('No_handphone', 'No Handphone:') !!}
+    {!! Form::number('No_handphone', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

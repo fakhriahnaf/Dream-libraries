@@ -29,20 +29,17 @@ Route::resource('mahasiswas', 'MahasiswaController');
 Route::resource('bukus', 'BukuController');
 
 
-Route::resource('visitors', 'visitorsController');
-
-Route::resource('films', 'FilmController');
-
 Route::resource('merchants', 'merchantController');
 
-Route::resource('nanunas', 'nanunaController');
-
-Route::resource('cantiks', 'cantikController');
-
-Route::resource('ayams', 'ayamController');
-
-Route::resource('bebeks', 'bebekController');
 
 Route::get('/cv', function () {
   return view('cv/cv');
 });
+
+Route::resource('$mahasiswas', '$mahasiswaController');
+
+Route::resource('mahasiswas', 'mahasiswaController');
+
+Route::resource('bukus', 'BukuController');
+
+Route::resource('peminjams', 'PeminjamController');

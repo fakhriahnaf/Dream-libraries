@@ -38,3 +38,19 @@
     <a href="{!! route('bebeks.index') !!}"><i class="fa fa-edit"></i><span>Bebeks</span></a>
 </li>
 
+<li class="{{ Request::is('$mahasiswas*') ? 'active' : '' }}">
+    <a href="{!! route('$mahasiswas.index') !!}"><i class="fa fa-edit"></i><span>$Mahasiswas</span></a>
+</li>
+
+<li class="{{ Request::is('mahasiswas*') ? 'active' : '' }}">
+    <a href="{!! route('mahasiswas.index') !!}"><i class="fa fa-edit"></i><span>Mahasiswas</span></a>
+</li>
+
+<li class="{{ Request::is('bukus*') ? 'active' : '' }}">
+    <a href="{!! route('bukus.index') !!}"><i class="fa fa-edit"></i><span>Bukus</span></a>
+</li>
+
+<li class="{{ Request::is('peminjams*') ? 'active' : '' }}">
+    <a href="{!! route('peminjams.index') !!}"><i class="fa fa-edit"></i><span>Peminjams</span></a>
+</li>
+

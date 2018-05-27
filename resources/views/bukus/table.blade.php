@@ -1,18 +1,20 @@
 <table class="table table-responsive" id="bukus-table">
     <thead>
-        <th>Judul</th>
-        <th>Pengarang</th>
-        <th>Seri</th>
-        <th>Keterangan</th>
-        <th colspan="3">Action</th>
+        <tr>
+            <th>Judul Buku</th>
+        <th>Seri Buku</th>
+        <th>Nama Pengarang</th>
+        <th>Tanggal Terbit</th>
+            <th colspan="3">Action</th>
+        </tr>
     </thead>
     <tbody>
     @foreach($bukus as $buku)
         <tr>
-            <td>{!! $buku->Judul !!}</td>
-            <td>{!! $buku->Pengarang !!}</td>
-            <td>{!! $buku->seri !!}</td>
-            <td>{!! $buku->keterangan !!}</td>
+            <td>{!! $buku->Judul_Buku !!}</td>
+            <td>{!! $buku->Seri_buku !!}</td>
+            <td>{!! $buku->Nama_pengarang !!}</td>
+            <td>{!! $buku->Tanggal_terbit !!}</td>
             <td>
                 {!! Form::open(['route' => ['bukus.destroy', $buku->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

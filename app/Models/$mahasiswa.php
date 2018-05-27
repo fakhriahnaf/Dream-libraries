@@ -6,30 +6,32 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class mahasiswa
+ * Class $mahasiswa
  * @package App\Models
- * @version May 27, 2018, 3:13 am UTC
+ * @version May 27, 2018, 3:11 am UTC
  *
- * @property string Nim
  * @property string Nama
+ * @property string Nim
+ * @property string No_Handphone
+ * @property string Alamat
  * @property string Departemen
- * @property string No_handphone
  */
-class mahasiswa extends Model
+class $mahasiswa extends Model
 {
     use SoftDeletes;
 
-    public $table = 'mahasiswas';
+    public $table = '$mahasiswas';
     
 
     protected $dates = ['deleted_at'];
 
 
     public $fillable = [
-        'Nim',
         'Nama',
-        'Departemen',
-        'No_handphone'
+        'Nim',
+        'No_Handphone',
+        'Alamat',
+        'Departemen'
     ];
 
     /**
@@ -38,10 +40,11 @@ class mahasiswa extends Model
      * @var array
      */
     protected $casts = [
-        'Nim' => 'string',
         'Nama' => 'string',
-        'Departemen' => 'string',
-        'No_handphone' => 'string'
+        'Nim' => 'string',
+        'No_Handphone' => 'string',
+        'Alamat' => 'string',
+        'Departemen' => 'string'
     ];
 
     /**
@@ -50,10 +53,11 @@ class mahasiswa extends Model
      * @var array
      */
     public static $rules = [
-        'Nim' => 'required',
         'Nama' => 'required',
-        'Departemen' => 'required',
-        'No_handphone' => 'required'
+        'Nim' => 'required',
+        'No_Handphone' => 'required',
+        'Alamat' => 'required',
+        'Departemen' => 'required'
     ];
 
     

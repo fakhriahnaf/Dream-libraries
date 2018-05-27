@@ -4,28 +4,28 @@
     <p>{!! $buku->id !!}</p>
 </div>
 
-<!-- Judul Field -->
+<!-- Judul Buku Field -->
 <div class="form-group">
-    {!! Form::label('Judul', 'Judul:') !!}
-    <p>{!! $buku->Judul !!}</p>
+    {!! Form::label('Judul_Buku', 'Judul Buku:') !!}
+    <p>{!! $buku->Judul_Buku !!}</p>
 </div>
 
-<!-- Pengarang Field -->
+<!-- Seri Buku Field -->
 <div class="form-group">
-    {!! Form::label('Pengarang', 'Pengarang:') !!}
-    <p>{!! $buku->Pengarang !!}</p>
+    {!! Form::label('Seri_buku', 'Seri Buku:') !!}
+    <p>{!! $buku->Seri_buku !!}</p>
 </div>
 
-<!-- Seri Field -->
+<!-- Nama Pengarang Field -->
 <div class="form-group">
-    {!! Form::label('seri', 'Seri:') !!}
-    <p>{!! $buku->seri !!}</p>
+    {!! Form::label('Nama_pengarang', 'Nama Pengarang:') !!}
+    <p>{!! $buku->Nama_pengarang !!}</p>
 </div>
 
-<!-- Keterangan Field -->
+<!-- Tanggal Terbit Field -->
 <div class="form-group">
-    {!! Form::label('keterangan', 'Keterangan:') !!}
-    <p>{!! $buku->keterangan !!}</p>
+    {!! Form::label('Tanggal_terbit', 'Tanggal Terbit:') !!}
+    <p>{!! $buku->Tanggal_terbit !!}</p>
 </div>
 
 <!-- Created At Field -->

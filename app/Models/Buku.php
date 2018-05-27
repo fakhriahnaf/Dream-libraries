@@ -8,7 +8,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Buku
  * @package App\Models
- * @version March 18, 2018, 9:49 am UTC
+ * @version May 27, 2018, 3:17 am UTC
+ *
+ * @property string Judul_Buku
+ * @property string Seri_buku
+ * @property string Nama_pengarang
+ * @property string Tanggal_terbit
  */
 class Buku extends Model
 {
@@ -21,10 +26,10 @@ class Buku extends Model
 
 
     public $fillable = [
-        'Judul',
-        'Pengarang',
-        'seri',
-        'keterangan'
+        'Judul_Buku',
+        'Seri_buku',
+        'Nama_pengarang',
+        'Tanggal_terbit'
     ];
 
     /**
@@ -33,10 +38,10 @@ class Buku extends Model
      * @var array
      */
     protected $casts = [
-        'Judul' => 'string',
-        'Pengarang' => 'string',
-        'seri' => 'string',
-        'keterangan' => 'string'
+        'Judul_Buku' => 'string',
+        'Seri_buku' => 'string',
+        'Nama_pengarang' => 'string',
+        'Tanggal_terbit' => 'string'
     ];
 
     /**
@@ -45,9 +50,10 @@ class Buku extends Model
      * @var array
      */
     public static $rules = [
-        'Judul' => 'required',
-        'Pengarang' => 'required',
-        'keterangan' => 'required'
+        'Judul_Buku' => 'required',
+        'Seri_buku' => 'required',
+        'Nama_pengarang' => 'required',
+        'Tanggal_terbit' => 'required'
     ];
 
     

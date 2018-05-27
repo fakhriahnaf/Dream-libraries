@@ -1,18 +1,20 @@
 <table class="table table-responsive" id="mahasiswas-table">
     <thead>
         <tr>
-            <th>Nama</th>
-        <th>Nim</th>
-        <th>Alamat</th>
+            <th>Nim</th>
+        <th>Nama</th>
+        <th>Departemen</th>
+        <th>No Handphone</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
     <tbody>
     @foreach($mahasiswas as $mahasiswa)
         <tr>
+            <td>{!! $mahasiswa->Nim !!}</td>
             <td>{!! $mahasiswa->Nama !!}</td>
-            <td>{!! $mahasiswa->NIM !!}</td>
-            <td>{!! $mahasiswa->Alamat !!}</td>
+            <td>{!! $mahasiswa->Departemen !!}</td>
+            <td>{!! $mahasiswa->No_handphone !!}</td>
             <td>
                 {!! Form::open(['route' => ['mahasiswas.destroy', $mahasiswa->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
