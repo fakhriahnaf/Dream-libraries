@@ -35,6 +35,12 @@ Route::resource('merchants', 'merchantController');
 Route::get('/cv', function () {
   return view('cv/cv');
 });
+Route::get('/chart', function () {
+  return view('chart');
+});
+Route::get('/hai', function () {
+  return view('hai/hai','AdminController@home');
+});
 
 Route::resource('$mahasiswas', '$mahasiswaController');
 
@@ -43,3 +49,13 @@ Route::resource('mahasiswas', 'mahasiswaController');
 Route::resource('bukus', 'BukuController');
 
 Route::resource('peminjams', 'PeminjamController');
+
+
+
+Route::post('/modal_create', 'AdminController@modal_create');
+Route::post('/modal_edit', 'AdminController@modal_edit');
+Route::post('/modal_delete', 'AdminController@modal_delete');
+Route::post('/do_create', 'AdminController@do_create');    
+Route::post('/do_edit/{id}', 'AdminController@do_edit');
+Route::post('/do_delete', 'AdminController@do_delete');
+Route::get('/chartjs', 'AdminController@chartjs');

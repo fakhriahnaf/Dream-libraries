@@ -100,9 +100,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
-                                <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                </div>
                                 <div class="pull-right">
                                     <a href="{!! url('/logout') !!}" class="btn btn-default btn-flat"
                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -125,44 +122,45 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <p class="w3-xlarge">selamat datang disini.</p>
         <a href="mahasiswas" class><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">cek apakah anda mahasiswa?</button>
       </header>
-      
-      <!-- First Grid -->
-      <div class="w3-row-padding w3-padding-64 w3-container">
-        <div class="w3-content">
-          <div class="w3-twothird">
-            <h1>Perpustakaan</h1>
-            <h5 class="w3-padding-32">perpustakaan adalah sebuah koleksi buku dan majalah. Walaupun dapat diartikan sebagai koleksi pribadi perseorangan, namun perpustakaan lebih umum dikenal sebagai sebuah koleksi besar yang dibiayai dan dioperasikan oleh sebuah kota atau institusi, serta dimanfaatkan oleh masyarakat yang rata-rata tidak mampu membeli sekian banyak buku atas biaya sendiri.
+    </a>
+    </header>
 
-                Tetapi, dengan koleksi dan penemuan media baru selain buku untuk menyimpan informasi, banyak perpustakaan kini juga merupakan tempat penyimpanan dan/atau akses ke map, cetak atau hasil seni lainnya, mikrofilm, mikrofiche, tape audio, CD, LP, tape video dan DVD. Selain itu, perpustakaan juga menyediakan fasilitas umum untuk mengakses gudang data CD-ROM dan internet.
-                
-                Perpustakaan dapat juga diartikan sebagai kumpulan informasi yang bersifat ilmu pengetahuan, hiburan, rekreasi, dan ibadah yang merupakan kebutuhan hakiki manusia.
-                
-                Oleh karena itu perpustakaan modern telah didefinisikan kembali sebagai tempat untuk mengakses informasi dalam format apa pun, apakah informasi itu disimpan dalam gedung perpustakaan tersebut ataupun tidak. Dalam perpustakaan modern ini selain kumpulan buku tercetak, sebagian buku dan koleksinya ada dalam perpustakaan digital (dalam bentuk data yang bisa diakses lewat jaringan komputer)..</p>
-          </div>
-      
-          <div class="w3-third w3-center">
-            <i class="fa fa-book w3-padding w3-text-red"></i>
-          </div>
+     
+    <!-- Content Header (Page header) -->   
+
+    <body>
+  <content>
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"></span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="https://www.thedataschool.co.uk/wp-content/uploads/2015/12/seo-51-512.png" alt="John" style="width:67%">
+        <div class="w3-container">
+          <h3>Chart</h3>
+          <p class="w3-opacity">menampilkan data pengunjung</p>
+          <p>aded soon.</p>
+          <p><a href="chart" class><button class="w3-button w3-light-grey w3-block">tampilkan</button></p></a>
         </div>
       </div>
-      
-      <!-- Second Grid -->
-      <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <div class="w3-content">
-          <div class="w3-third w3-center">
-            <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-          </div>
-      
-          <div class="w3-twothird">
-            <h1>coffe-break</h1>
-            <h3 class="w3-padding-32">rehat-istirahat-santai.</h3>
-      
-            <p class="w3-text-grey">Istilah untuk istirahat singkat selama 10 hingga 20 menit di hari kerja, di suatu acara pertemuan, atau perkumpulan, yang merupakan waktu umum untuk menikmati secangkir kopi, atau teh, atau makanan keci.
-                Tradisi ini juga dapat disebut sebagai istirahat minum teh, atau Afternoon Tea. Coffee Break juga berfungsi sebagai waktu untuk bersosialisasi dan istirahat,.</p>
-          </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="http://www.kingsweston.bristol.sch.uk/_files/images/2016-2017/1EC0DEED8BA7F604E8D118ADA2E72AFA.png " alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Data Pengunjung</h3>
+          <p>Data lah untuk setiap peminjam buku yang meminjamkan buku</p>
+          <p><a href="peminjams" class><button class="w3-button w3-light-grey w3-block">tampilkan</button></p></a>
         </div>
       </div>
-      
+    </div>
+  </div>
+    
+  </content>
+    </body> 
       <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
           <h1 class="w3-margin w3-xlarge">Quote of the day: live is life</h1>
       </div>
@@ -184,7 +182,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.11/js/app.min.js"></script>
     
     @yield('scripts')
-</body>
+
 </html>
     
 
